@@ -87,25 +87,3 @@ def play_game():
     return 0
 
 
-def main():
-    total_score = 0
-
-    show_intro()
-
-    while True:
-        earned = play_game()
-        total_score += earned
-
-        print("\nTotal Score:", total_score)
-
-        again = input("\nPlay Again? (yes/no): ").lower()
-
-        if again != "yes":
-            break
-
-    print("\nThanks for playing!")
-    print("Your Final Total Score:", total_score)
-
-
-if __name__ == "__main__":
-    main()
